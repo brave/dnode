@@ -1,49 +1,53 @@
 {
-  "name" : "dnode",
-  "version" : "1.2.2",
-  "description" : "freestyle rpc",
-  "main" : "./index.js",
-  "keywords" : [
+  "name": "dnode",
+  "version": "1.2.2",
+  "description": "freestyle rpc",
+  "main": "./index.js",
+  "keywords": [
     "rpc",
     "callbacks"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/substack/dnode.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/substack/dnode.git"
   },
-  "dependencies" : {
-    "dnode-protocol" : "~0.2.2",
-    "jsonify" : "~0.0.0"
+  "dependencies": {
+    "dnode-protocol": "~0.2.2",
+    "jsonify": "~0.0.0",
+    "weak-napi": "^2.0.2"
   },
-  "optionalDependencies": {
-    "weak": "^1.0.0"
+  "optionalDependencies": {},
+  "devDependencies": {
+    "tape": "~2.3.2"
   },
-  "devDependencies" : {
-    "tape" : "~2.3.2"
+  "scripts": {
+    "test": "tape test/*.js test/server/*.js"
   },
-  "scripts" : {
-    "test" : "tape test/*.js test/server/*.js"
-  },
-  "testling" : {
-    "files" : "test/*.js",
-    "browsers" : [
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
       "ie/6..latest",
-      "chrome/10","chrome/latest","chrome/canary",
-      "firefox/10","firefox/latest","firefox/nightly",
+      "chrome/10",
+      "chrome/latest",
+      "chrome/canary",
+      "firefox/10",
+      "firefox/latest",
+      "firefox/nightly",
       "safari/latest",
       "opera/11.0..latest",
-      "iphone/6", "ipad/6",
+      "iphone/6",
+      "ipad/6",
       "android-browser/latest"
     ]
   },
-  "browserify" : "browser.js",
-  "engine" : {
-    "node" : ">=0.6.0"
+  "browserify": "browser.js",
+  "engine": {
+    "node": ">=0.6.0"
   },
-  "license" : "MIT",
-  "author" : {
-    "name" : "James Halliday",
-    "email" : "mail@substack.net",
-    "url" : "http://substack.net"
+  "license": "MIT",
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
   }
 }

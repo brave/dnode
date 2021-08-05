@@ -9,9 +9,7 @@ It's callbacks all the way down!
 
 [![browser support](https://ci.testling.com/substack/dnode.png)](http://ci.testling.com/substack/dnode)
 
-[![build status](https://secure.travis-ci.org/substack/dnode.png)](http://travis-ci.org/substack/dnode)
-
-![dnode: freestyle rpc](http://substack.net/images/dnode.png)
+[![Build](https://github.com/brave/dnode/actions/workflows/action.yml/badge.svg)](https://github.com/brave/dnode/actions/workflows/action.yml)
 
 # example
 
